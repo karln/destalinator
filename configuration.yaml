@@ -1,5 +1,5 @@
 # Name of your Slack (Deprecated in favour of the slack_name env var)
-slack_name: rands-leadership
+slack_name: illustrativemath
 
 # Name of environment variable that determines if destalinator should
 # actually do things to a live slack. Without this environment variable,
@@ -14,10 +14,10 @@ bot_name: "destalinator"
 bot_avatar_url: "https://s3-us-west-1.amazonaws.com/eng-management-docs/bread.png"
 
 # Days of silence before we warn a channel it's going to be archived
-warn_threshold: 30
+warn_threshold: 60
 
 # Days of silence before we auto-archive a channel
-archive_threshold: 60
+archive_threshold: 90
 
 # Where should we post "general" announcement messages?
 general_message_channel: "stale-channels"
@@ -39,11 +39,9 @@ ignore_channels:
 # Regular expression patterns for additional channels to ignore during archiving
 ignore_channel_patterns:
   - ^zmeta-
-  - rands
-  - calibrate
-  - ^faq-
-  - people-of-color
-  - ^announcements
+  - ^im-lz
+  - ^im-kh
+  - ^im-lt
 
 # Users to ignore when considering if a channel is stale
 ignore_users:
